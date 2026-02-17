@@ -87,4 +87,21 @@ Add code and narrative as needed.
 
 To add additional R chunks, you can either type the backticks, curly braces, and the letter `r`, or use the "Insert Chunk" button above (the green C+ icon). Have fun!
 
+Ok. I'm going to start over from Ex 3 to practice. 
 
+```{r plot-star, fig.height=3, fig.width=6}
+star_data <- datasaurus_dozen %>%
+  filter(dataset == "star")
+
+ggplot(data = star_data, mapping = aes(x = x, y = y)) +
+  geom_point()
+```
+Cool, ok, I ran that. Not I'm going to just change the size of the axes.
+```{r plot-star, fig.height=6, fig.width=6}
+star_data <- datasaurus_dozen %>%
+  filter(dataset == "star")
+
+ggplot(data = star_data, mapping = aes(x = x, y = y)) +
+  geom_point()
+```
+Now the star looks better again. I want to try to commit this and submit it. You don't need to give me any comments. This was hard. It's still hard. I need to figure out how to find the .md file in github desktop, so let me knit this and see if it shows up...(?). 
